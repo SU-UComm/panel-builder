@@ -83,7 +83,7 @@ class PanelCollection implements \JsonSerializable {
 		return $loop->render();
 	}
 
-	public function jsonSerialize() {
+	public function jsonSerialize(): array {
 		return array(
 			'panels' => $this->panels,
 		);
