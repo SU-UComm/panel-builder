@@ -16,6 +16,7 @@ abstract class Panel_Set_Meta_Box {
 	protected $meta_box_defaults;
 
 	private static $registry = [ ];
+	private $post_type;
 
 	public static function init() {
 		add_action( 'post_submitbox_misc_actions', [ __CLASS__, 'display_nonce' ] );
